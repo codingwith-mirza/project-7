@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    padding: 20px 0px;
+    text-align: center;
+    background-color:black;
+}
+nav li{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}  
+nav a{
+    text-decoration: none;
+    color: wheat;
+    padding:15px;
+    border-radius:10px;
+} 
+nav a:hover{
+    background:rgba(255, 255, 255, 0.304);
+    transition:0.6s;
+}
+nav .submenu{
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top:3px solid coral;
+    width:150px;
+    opacity:0;
+    visibility: hidden;
+    margin-top: 150px;
+}
+nav .submenu li{
+    display: block;
+    text-align:center;
+    border-bottom:1px solid rgba(10, 10, 10, 0.2);
+}
+nav .submenu li a{
+    color:black;
+    border-radius:0px;
+    padding: 0px;
+}
+nav .submenu li a:hover{
+    background-color:rgba(255, 127, 80, 0.3);
+    border-radius:8px;
+    padding: 5px;
+    transition: 0.6s;
+}
+nav li:hover > .submenu{
+    opacity:1;
+    visibility:visible;
+    margin-top:0px;
+    transition: 0.5s;
+}
+nav .submenu .submenu{
+    top: 0px;
+    left: 100%;
+}
